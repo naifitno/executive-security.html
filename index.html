@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naif AlAskari | Strategic CISO Portfolio</title>
+    <title>Naif AlAskari | Strategic CISO & Cybersecurity Consultant</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #0a192f;
             --secondary: #0A66C2;
-            --accent: #d4af37; /* Gold touch for consultant feel */
+            --accent: #d4af37;
             --text-main: #1a1a1a;
             --text-light: #4a4a4a;
             --bg-light: #f4f7f9;
@@ -19,14 +19,14 @@
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-light);
             color: var(--text-main);
-            line-height: 1.5;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
         }
 
         .container {
             max-width: 950px;
-            margin: 30px auto;
+            margin: 40px auto;
             background: #fff;
             padding: 50px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
@@ -36,21 +36,21 @@
         header {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
             border-bottom: 2px solid #eee;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
             margin-bottom: 30px;
         }
 
         .name-title h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 38px;
+            font-size: 42px;
             margin: 0;
             color: var(--primary);
         }
 
         .name-title .subtitle {
-            font-size: 18px;
+            font-size: 20px;
             color: var(--secondary);
             font-weight: 600;
             letter-spacing: 1px;
@@ -60,65 +60,72 @@
         .contact-grid {
             text-align: right;
             font-size: 14px;
-            color: var(--text-light);
+            line-height: 1.8;
         }
 
-        .contact-grid a { color: var(--secondary); text-decoration: none; }
+        .contact-grid a { color: var(--secondary); text-decoration: none; font-weight: 600; }
 
         .executive-summary {
-            background: #f8f9fa;
-            border-left: 5px solid var(--secondary);
-            padding: 20px;
-            font-size: 16px;
-            margin-bottom: 30px;
-            font-style: italic;
+            background: var(--primary);
+            color: #fff;
+            padding: 30px;
+            font-size: 17px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+            font-weight: 300;
         }
 
         h2 {
-            font-size: 20px;
+            font-size: 22px;
             color: var(--primary);
             text-transform: uppercase;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 8px;
-            margin-top: 35px;
-        }
-
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .exp-item { margin-bottom: 25px; }
-        .exp-header { display: flex; justify-content: space-between; font-weight: 700; font-size: 16px; }
-        .company { color: var(--secondary); font-weight: 600; margin-bottom: 5px; }
-        
-        ul { padding-left: 18px; margin-top: 5px; }
-        li { margin-bottom: 6px; font-size: 14.5px; color: #333; }
-
-        .badge-container { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
-        .badge {
-            background: var(--primary);
-            color: white;
-            padding: 4px 10px;
-            border-radius: 3px;
-            font-size: 11px;
-            font-weight: 600;
-        }
-
-        .skill-tag {
+            border-bottom: 2px solid var(--secondary);
             display: inline-block;
-            background: #eef2f7;
-            padding: 5px 12px;
-            margin: 4px;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: 500;
+            margin-top: 40px;
+            margin-bottom: 20px;
         }
 
-        @media print {
-            .container { box-shadow: none; margin: 0; width: 100%; }
-            .no-print { display: none; }
+        .exp-item { margin-bottom: 35px; }
+        .exp-header { 
+            display: flex; 
+            justify-content: space-between; 
+            font-weight: 700; 
+            font-size: 18px;
+            color: #111;
+        }
+        .company { color: var(--secondary); font-weight: 600; font-size: 16px; margin-bottom: 10px; }
+        
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; font-size: 15px; color: var(--text-light); }
+
+        .cert-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .cert-category h4 { margin: 0 0 10px 0; color: var(--primary); border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+
+        .badge {
+            display: inline-block;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 4px 12px;
+            margin: 3px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 25px; margin: 10px; }
+            header { flex-direction: column; text-align: center; }
+            .contact-grid { text-align: center; margin-top: 20px; }
+            .exp-header { flex-direction: column; }
         }
     </style>
 </head>
@@ -131,26 +138,26 @@
             <div class="subtitle">Chief Information Security Officer (CISO)</div>
         </div>
         <div class="contact-grid">
-            Riyadh, Saudi Arabia [cite: 3]<br>
-            +966 59 132 3234 [cite: 3]<br>
-            naiftinoask@gmail.com [cite: 3]<br>
-            <a href="https://www.linkedin.com/in/naifalaskari/">linkedin.com/in/naifalaskari</a> [cite: 3]
+            Riyadh, Saudi Arabia<br>
+            +966 59 132 3234<br>
+            <a href="mailto:naiftinoask@gmail.com">naiftinoask@gmail.com</a><br>
+            <a href="https://www.linkedin.com/in/naifalaskari/">LinkedIn Profile</a>
         </div>
     </header>
 
     <div class="executive-summary">
-        Cybersecurity Executive with 13+ years of experience leading security transformations across regulated industries[cite: 4]. 
-        Specialized in building strategic roadmaps, aligning budgets with risk priorities, and ensuring compliance with ECC, CCC, PDPL, SAMA, and HIPAA[cite: 5]. 
-        Proven success in establishing Tier 3 SOCs and achieving CST Class C certification[cite: 6].
+        Cybersecurity Executive with 13+ years of experience leading security transformations across regulated industries. 
+        Trusted advisor to leadership, specializing in strategic roadmaps, aligning multi-million dollar budgets with risk priorities, 
+        and ensuring compliance with NCA (ECC/CCC), PDPL, SAMA, and HIPAA.
     </div>
 
     <section>
-        <h2>Key Strategic Achievements</h2>
+        <h2>Strategic Impact & Achievements</h2>
         <ul>
-            <li><strong>CST Class C Certification:</strong> Achieved full compliance with NCA ECC/CCC frameworks for Zoho's Saudi data center[cite: 19, 27].</li>
-            <li><strong>Tier 3 SOC Deployment:</strong> Operationalized a localized 24/7 SOC aligned with NCA SOC-1, including SIEM integration[cite: 20, 28].</li>
-            <li><strong>Regulatory Coverage:</strong> Enabled 90%+ compliance adoption across SaaS services, increasing client retention[cite: 21, 31].</li>
-            <li><strong>Industrial Security:</strong> Delivered secured architectures for critical infrastructure (Water, Power, Petrochemicals)[cite: 22].</li>
+            <li><strong>CST Class C Accreditation:</strong> Achieved full compliance for Zoho's Saudi data center.</li>
+            <li><strong>Tier 3 SOC Leadership:</strong> Operationalized a 24/7 localized SOC aligned with NCA SOC-1.</li>
+            <li><strong>Risk Optimization:</strong> Reduced average remediation time by 45% using ISO 31000 and CVSS scoring.</li>
+            <li><strong>Market Enablement:</strong> Enabled 90%+ compliance adoption for SaaS services, securing high-value client contracts.</li>
         </ul>
     </section>
 
@@ -160,96 +167,28 @@
         <div class="exp-item">
             <div class="exp-header">
                 <span>Chief Information Security Officer (CISO)</span>
-                <span>Feb 2025 – Present</span>
+                <span>2025 – Present</span>
             </div>
-            <div class="company">Zoho Middle East & North Africa [cite: 25]</div>
+            <div class="company">Zoho Middle East & North Africa</div>
             <ul>
-                <li>Established the KSA cybersecurity department from the ground up[cite: 26].</li>
-                <li>Reduced average remediation time by 45% through risk and vulnerability management (ISO 31000)[cite: 29].</li>
-                <li>Ensured successful audits with SAMA, HIPAA, and NCA authorities[cite: 30].</li>
+                <li>Established the cybersecurity department from the ground up, achieving NCA and PDPL compliance within 5 months.</li>
+                <li>Led vulnerability management and maintained regulatory relationships with SAMA and HIPAA authorities.</li>
             </ul>
         </div>
 
         <div class="exp-item">
             <div class="exp-header">
-                <span>Industrial Cybersecurity Director - ICS/OT</span>
-                <span>May 2023 – Feb 2025</span>
+                <span>Industrial Cybersecurity Director (ICS/OT)</span>
+                <span>2023 – 2025</span>
             </div>
-            <div class="company">Veolia Near & Middle East [cite: 33]</div>
+            <div class="company">Veolia Near & Middle East</div>
             <ul>
-                <li>Directed OT/ICS security for national clients including SWPC, NWC, and SABIC[cite: 34, 37].</li>
-                <li>Integrated NIST SP 800-53 and NCA OTCC controls into operational networks[cite: 35].</li>
-                <li>Led incident response planning and industrial network segmentation[cite: 36].</li>
+                <li>Directed OT/ICS security for critical infrastructure (SWPC, NWC, SABIC).</li>
+                <li>Integrated NIST SP 800-53 and NCA OTCC controls into mission-critical networks.</li>
+                <li>Led incident response planning and industrial network segmentation.</li>
             </ul>
         </div>
 
         <div class="exp-item">
             <div class="exp-header">
-                <span>Cybersecurity Manager & GRC Project Manager</span>
-                <span>Sep 2017 – May 2023</span>
-            </div>
-            <div class="company">Government Authority for Technical Training [cite: 39, 44]</div>
-            <ul>
-                <li>Built Tier 3 SOC operations with integrated EDR (CrowdStrike), IPS, and IDS platforms[cite: 17, 40].</li>
-                <li>Led governance programs aligned with NCA ECC and PDPL frameworks[cite: 45].</li>
-                <li>Managed end-to-end GRC projects, risk frameworks, and third-party assessments[cite: 46].</li>
-            </ul>
-        </div>
-
-        <div class="exp-item">
-            <div class="exp-header">
-                <span>Senior Specialist & IT Analyst Roles</span>
-                <span>Sep 2013 – Sep 2017</span>
-            </div>
-            <div class="company">Government Authority for Technical Training </div>
-            <ul>
-                <li>Designed scalable, secure network infrastructure for mission-critical services[cite: 48].</li>
-                <li>Monitored IT systems performance and implemented digital infrastructure projects[cite: 51].</li>
-            </ul>
-        </div>
-    </section>
-
-    <div class="grid-2">
-        <section>
-            <h2>Education</h2>
-            <div class="exp-item">
-                <strong>Master's in Computer Science (MCS)</strong><br>
-                University of Adelaide, Australia [cite: 55]
-            </div>
-            <div class="exp-item">
-                <strong>Bachelor of Engineering Technology (BET)</strong><br>
-                Applied Engineering College, Riyadh [cite: 56]
-            </div>
-        </section>
-        <section>
-            <h2>Executive Education</h2>
-            <ul>
-                <li>Harvard: Cybersecurity Risk Management (2023) [cite: 65]</li>
-                <li>MIT Sloan: Business Sustainability Strategy (2023) [cite: 65]</li>
-                <li>Saudi Digital Academy: Digital Transformation [cite: 65]</li>
-            </ul>
-        </section>
-    </div>
-
-    <section>
-        <h2>Certifications & Skills</h2>
-        <div class="badge-container">
-            <span class="badge">CCISO</span> <span class="badge">CISM</span> <span class="badge">CRISC</span> 
-            <span class="badge">CISA</span> <span class="badge">PMP</span> <span class="badge">ISO 27001 LA</span>
-            <span class="badge">CEH</span> <span class="badge">GCP Security Engineer</span> <span class="badge">IDPP</span>
-        </div>
-        <div style="margin-top: 15px;">
-            <span class="skill-tag">Crisis Leadership [cite: 74]</span>
-            <span class="skill-tag">Executive Communication [cite: 68]</span>
-            <span class="skill-tag">Budgeting & Cost Control [cite: 10]</span>
-            <span class="skill-tag">Stakeholder Influence [cite: 70]</span>
-        </div>
-    </section>
-
-    <div style="margin-top: 30px; font-size: 13px; color: #888;" class="no-print">
-        Languages: Arabic (Native), English (Fluent) [cite: 75, 76]
-    </div>
-</div>
-
-</body>
-</html>
+                <span>Cybersecurity Manager / GRC Lead</span>
